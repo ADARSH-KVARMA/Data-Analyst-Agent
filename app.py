@@ -69,7 +69,7 @@ CORS(app, supports_credentials=True, resources={r"/*": {"origins": "*"}}, method
 
 @app.route("/", methods=["GET"])
 def main():
-    return jsonify({"message": "Hello World"})
+    return "<h1> Angent is only for personal use as of now </h1>"
 
 @app.route("/api/", methods=["POST"])
 def upload_files():
@@ -109,3 +109,4 @@ def upload_files():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
+
